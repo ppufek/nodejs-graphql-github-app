@@ -113,7 +113,6 @@ function getUserInformation(username:string) {
                     if (parsed.message === undefined) {
                         newUser = new GitHubUser(parsed.login, email, parsed.followers, parsed.following);
                         searchedUsers.push(newUser)
-                        resolve(newUser)
                     } else {
                         newUser = null
                     }
