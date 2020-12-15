@@ -1,14 +1,14 @@
-import { gql } from "apollo-server-express"
+import { gql } from 'apollo-server-express'
 
 export const typeDefs = gql`
     type Query {
         hello: String!
-        user(username: String!): GithubUser
-        mostSearched(limit: Int): [GithubUser]
-        mostPopular: [GithubUser]
+        user(username: String!): GitHubUser
+        mostSearched(limit: Int): [GitHubUser]
+        mostPopular: [GitHubUser]
     }
 
-    type GithubUser {
+    type GitHubUser {
         username: String
         email: String
         searchedForCounter: Int
